@@ -1,82 +1,438 @@
-2020-12-14 15:05:16.651  INFO 11244 --- [restartedMain] c.m.p.PresentationLayerApplication       : Starting PresentationLayerApplication using Java 15 on macpro.local with PID 11244 (/Users/garrido/springSTS4/spring-mvc/PresentationLayer/target/classes started by garrido in /Users/garrido/springSTS4/spring-mvc/PresentationLayer)
-2020-12-14 15:05:16.678  INFO 11244 --- [restartedMain] c.m.p.PresentationLayerApplication       : No active profile set, falling back to default profiles: default
-2020-12-14 15:05:16.871  INFO 11244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-12-14 15:05:16.871  INFO 11244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-12-14 15:05:18.577  INFO 11244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-12-14 15:05:18.589  INFO 11244 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-12-14 15:05:18.589  INFO 11244 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-12-14 15:05:18.676  INFO 11244 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-12-14 15:05:18.678  INFO 11244 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1804 ms
-2020-12-14 15:05:18.923  INFO 11244 --- [restartedMain] c.m.p.security.SpringSecurityConfig      : ______now in global config
-2020-12-14 15:05:19.142  INFO 11244 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-12-14 15:05:19.251  INFO 11244 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-12-14 15:05:19.495  INFO 11244 --- [restartedMain] c.m.p.security.SpringSecurityConfig      : ______now in configure.
-2020-12-14 15:05:19.535  INFO 11244 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31a10eb1, org.springframework.security.web.context.SecurityContextPersistenceFilter@42e1c1e2, org.springframework.security.web.header.HeaderWriterFilter@56edac9d, org.springframework.security.web.csrf.CsrfFilter@114ee582, org.springframework.security.web.authentication.logout.LogoutFilter@1329c84a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@17f6b32f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7286f3c1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5801ab37, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a5d7e73, org.springframework.security.web.session.SessionManagementFilter@1e97b3db, org.springframework.security.web.access.ExceptionTranslationFilter@1a1f5ab0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@12503f9]
-2020-12-14 15:05:19.615  INFO 11244 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-12-14 15:05:19.705  INFO 11244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-12-14 15:05:19.722  INFO 11244 --- [restartedMain] c.m.p.PresentationLayerApplication       : Started PresentationLayerApplication in 3.634 seconds (JVM running for 5.372)
-2020-12-14 15:06:34.491  INFO 11244 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-12-14 15:06:34.493  INFO 11244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-12-14 15:06:34.495  INFO 11244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2020-12-14 15:06:42.971  INFO 11244 --- [http-nio-8080-exec-4] c.m.p.controller.LoginController         : in login controller
-2020-12-14 15:06:49.178  INFO 11244 --- [http-nio-8080-exec-8] c.m.p.controller.LoginController         : user: admin
-2020-12-14 15:06:49.178  INFO 11244 --- [http-nio-8080-exec-8] c.m.p.controller.LoginController         : password: admin
-2020-12-14 15:08:40.950  INFO 11244 --- [http-nio-8080-exec-7] c.m.p.controller.LoginController         : in login controller
-2020-12-14 15:08:45.316  INFO 11244 --- [http-nio-8080-exec-9] c.m.p.controller.LoginController         : user: admin
-2020-12-14 15:08:45.316  INFO 11244 --- [http-nio-8080-exec-9] c.m.p.controller.LoginController         : password: admin
-2020-12-14 15:11:17.945  INFO 11244 --- [http-nio-8080-exec-9] c.m.p.controller.CategoryController      : name: Web Programming
-2020-12-14 15:11:17.945  INFO 11244 --- [http-nio-8080-exec-9] c.m.p.controller.BooksService            : returning book list of: 0 items.
-2020-12-14 15:11:17.979  INFO 11244 --- [http-nio-8080-exec-9] c.m.p.controller.BooksService            : books added: 8
-2020-12-14 15:11:19.871  INFO 11244 --- [http-nio-8080-exec-4] c.m.p.controller.ProductController       : isbn: 9789144126739
-2020-12-14 15:11:19.871  INFO 11244 --- [http-nio-8080-exec-4] c.m.p.controller.BooksService            : returning book list of: 8 items.
-2020-12-14 15:11:19.872  INFO 11244 --- [http-nio-8080-exec-4] c.m.p.controller.BooksService            : books added: 16
-2020-12-14 15:11:19.872  INFO 11244 --- [http-nio-8080-exec-4] c.m.p.controller.BooksService            : item found: Book(id=null, isbn=9789144126739, title=Ingenjörens guide till Python, year=2019, price=366.0, coAuthors=[], author=Author(id=null, name=Jonas Lindemann, title=[]), categories=[Category(id=null, name=Python)], description=Bokens utgångspunkt är ingenjörens behov av programmering för att lösa problem. Steg för steg byggs läsarens kunskaper upp i Python-programmering. Mot slutet av boken kommer läsaren att ha grundläggande kunskaper i utveckling av Python-program för lösning av numeriska problem, grundläggande visualisering av data samt att skapa grafiska gränssnitt för användare. Alla koncept som beskrivs i boken illustreras med en stor mängd körbara exempel. Ingenjörens guide till Python innehåller också en mängd övningsuppgifter att göra på egen hand. Till boken finns en hemsida där all källkod från boken finns tillgänglig att ladda ner och köra. Boken är avsedd som en introduktion till programmering med Python för ingenjörer, men kan även med fördel användas för praktiserande ingenjörer som vill lära sig mer om hur Python kan användas som alternativ till klassiska verktyg som exempelvis MATLAB., image=Image(filepath=/images/ingenjorens-guide-till-python.jpg))
-2020-12-14 15:11:19.872  INFO 11244 --- [http-nio-8080-exec-4] c.m.p.controller.ProductController       : book found: Book(id=null, isbn=9789144126739, title=Ingenjörens guide till Python, year=2019, price=366.0, coAuthors=[], author=Author(id=null, name=Jonas Lindemann, title=[]), categories=[Category(id=null, name=Python)], description=Bokens utgångspunkt är ingenjörens behov av programmering för att lösa problem. Steg för steg byggs läsarens kunskaper upp i Python-programmering. Mot slutet av boken kommer läsaren att ha grundläggande kunskaper i utveckling av Python-program för lösning av numeriska problem, grundläggande visualisering av data samt att skapa grafiska gränssnitt för användare. Alla koncept som beskrivs i boken illustreras med en stor mängd körbara exempel. Ingenjörens guide till Python innehåller också en mängd övningsuppgifter att göra på egen hand. Till boken finns en hemsida där all källkod från boken finns tillgänglig att ladda ner och köra. Boken är avsedd som en introduktion till programmering med Python för ingenjörer, men kan även med fördel användas för praktiserande ingenjörer som vill lära sig mer om hur Python kan användas som alternativ till klassiska verktyg som exempelvis MATLAB., image=Image(filepath=/images/ingenjorens-guide-till-python.jpg))
-2020-12-14 15:11:19.872  INFO 11244 --- [http-nio-8080-exec-4] c.m.p.controller.ProductController       : got: Ingenjörens guide till Python
-2020-12-14 15:11:21.883  INFO 11244 --- [http-nio-8080-exec-7] c.m.p.controller.CheckoutController      : in first checkout
-2020-12-14 15:11:28.583  INFO 11244 --- [http-nio-8080-exec-1] c.m.p.controller.CheckoutController      : user firstname: Ivan
-2020-12-14 15:18:39.654  INFO 11244 --- [http-nio-8080-exec-9] c.m.p.controller.LoginController         : in login controller
-2020-12-14 15:18:45.088  INFO 11244 --- [http-nio-8080-exec-2] c.m.p.controller.LoginController         : user: admin
-2020-12-14 15:18:45.088  INFO 11244 --- [http-nio-8080-exec-2] c.m.p.controller.LoginController         : password: admin
-2020-12-14 15:18:50.444  INFO 11244 --- [http-nio-8080-exec-9] c.m.p.controller.CategoryController      : name: Design Patterns
-2020-12-14 15:18:50.445  INFO 11244 --- [http-nio-8080-exec-9] c.m.p.controller.BooksService            : returning book list of: 16 items.
-2020-12-14 15:18:50.445  INFO 11244 --- [http-nio-8080-exec-9] c.m.p.controller.BooksService            : books added: 24
-2020-12-14 15:19:06.209  INFO 11244 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-12-14 15:19:06.997  INFO 11244 --- [restartedMain] c.m.p.PresentationLayerApplication       : Starting PresentationLayerApplication using Java 15 on macpro.local with PID 11244 (/Users/garrido/springSTS4/spring-mvc/PresentationLayer/target/classes started by garrido in /Users/garrido/springSTS4/spring-mvc/PresentationLayer)
-2020-12-14 15:19:06.998  INFO 11244 --- [restartedMain] c.m.p.PresentationLayerApplication       : No active profile set, falling back to default profiles: default
-2020-12-14 15:19:07.690  INFO 11244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-12-14 15:19:07.692  INFO 11244 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-12-14 15:19:07.692  INFO 11244 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-12-14 15:19:07.713  INFO 11244 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-12-14 15:19:07.714  INFO 11244 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 711 ms
-2020-12-14 15:19:08.010  INFO 11244 --- [restartedMain] c.m.p.security.SpringSecurityConfig      : ______now in global config
-2020-12-14 15:19:08.137  INFO 11244 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-12-14 15:19:08.167  INFO 11244 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-12-14 15:19:08.258  INFO 11244 --- [restartedMain] c.m.p.security.SpringSecurityConfig      : ______now in configure.
-2020-12-14 15:19:08.278  INFO 11244 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56d5411e, org.springframework.security.web.context.SecurityContextPersistenceFilter@191d3963, org.springframework.security.web.header.HeaderWriterFilter@5c1a9d7d, org.springframework.security.web.csrf.CsrfFilter@71d87708, org.springframework.security.web.authentication.logout.LogoutFilter@3a0a685b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@35619deb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1293462d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1aeac077, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3acfff7c, org.springframework.security.web.session.SessionManagementFilter@2bcf7b25, org.springframework.security.web.access.ExceptionTranslationFilter@41495994, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24611450]
-2020-12-14 15:19:08.292  INFO 11244 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-12-14 15:19:08.310  INFO 11244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-12-14 15:19:08.325  INFO 11244 --- [restartedMain] c.m.p.PresentationLayerApplication       : Started PresentationLayerApplication in 1.723 seconds (JVM running for 834.014)
-2020-12-14 15:19:08.329  INFO 11244 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-12-14 15:19:08.930  INFO 11244 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-12-14 15:19:08.930  INFO 11244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-12-14 15:19:08.931  INFO 11244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2020-12-14 15:19:15.070  INFO 11244 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-12-14 15:19:15.224  INFO 11244 --- [restartedMain] c.m.p.PresentationLayerApplication       : Starting PresentationLayerApplication using Java 15 on macpro.local with PID 11244 (/Users/garrido/springSTS4/spring-mvc/PresentationLayer/target/classes started by garrido in /Users/garrido/springSTS4/spring-mvc/PresentationLayer)
-2020-12-14 15:19:15.231  INFO 11244 --- [restartedMain] c.m.p.PresentationLayerApplication       : No active profile set, falling back to default profiles: default
-2020-12-14 15:19:15.596  INFO 11244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-12-14 15:19:15.599  INFO 11244 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-12-14 15:19:15.599  INFO 11244 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-12-14 15:19:15.611  INFO 11244 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-12-14 15:19:15.613  INFO 11244 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 328 ms
-2020-12-14 15:19:15.664  INFO 11244 --- [restartedMain] c.m.p.security.SpringSecurityConfig      : ______now in global config
-2020-12-14 15:19:15.727  INFO 11244 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-12-14 15:19:15.758  INFO 11244 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-12-14 15:19:15.845  INFO 11244 --- [restartedMain] c.m.p.security.SpringSecurityConfig      : ______now in configure.
-2020-12-14 15:19:15.849  INFO 11244 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@42be859c, org.springframework.security.web.context.SecurityContextPersistenceFilter@64fd88f0, org.springframework.security.web.header.HeaderWriterFilter@70ddce72, org.springframework.security.web.csrf.CsrfFilter@736dd936, org.springframework.security.web.authentication.logout.LogoutFilter@6db073d8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5c995a56, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20f9cc1f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e49282c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@36017723, org.springframework.security.web.session.SessionManagementFilter@79c45a97, org.springframework.security.web.access.ExceptionTranslationFilter@7e8748f8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@40b00359]
-2020-12-14 15:19:15.915  INFO 11244 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-12-14 15:19:15.931  INFO 11244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-12-14 15:19:15.952  INFO 11244 --- [restartedMain] c.m.p.PresentationLayerApplication       : Started PresentationLayerApplication in 0.762 seconds (JVM running for 841.642)
-2020-12-14 15:19:15.957  INFO 11244 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-12-14 15:24:10.443  INFO 11244 --- [RMI TCP Connection(32)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2020-12-14 15:24:10.503  INFO 11244 --- [RMI TCP Connection(32)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-15 00:02:04.421  INFO 14602 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-15 00:02:04.927  INFO 14602 --- [restartedMain] c.m.p.PresentationLayerApplication       : Starting PresentationLayerApplication using Java 15 on macpro.local with PID 14602 (/Users/garrido/git/webshop/presentation/PresentationLayer/target/classes started by garrido in /Users/garrido/git/webshop/presentation/PresentationLayer)
+2020-12-15 00:02:04.928  INFO 14602 --- [restartedMain] c.m.p.PresentationLayerApplication       : No active profile set, falling back to default profiles: default
+2020-12-15 00:02:05.161  INFO 14602 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2020-12-15 00:02:05.162  INFO 14602 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-15 00:02:05.162  INFO 14602 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-15 00:02:05.174  INFO 14602 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-12-15 00:02:05.174  INFO 14602 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 244 ms
+2020-12-15 00:02:05.181 DEBUG 14602 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2020-12-15 00:02:05.181 DEBUG 14602 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2020-12-15 00:02:05.226  INFO 14602 --- [restartedMain] c.m.p.security.SpringSecurityConfig      : ______now in global config
+2020-12-15 00:02:05.236  INFO 14602 --- [restartedMain] c.m.p.security.SpringSecurityConfig      : ______now in configure.
+2020-12-15 00:02:05.240  INFO 14602 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e006b05, org.springframework.security.web.context.SecurityContextPersistenceFilter@11adf3d4, org.springframework.security.web.header.HeaderWriterFilter@f290186, org.springframework.security.web.csrf.CsrfFilter@1fa89d63, org.springframework.security.web.authentication.logout.LogoutFilter@67a7c673, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3b4e91c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3dbdf37a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a5ff07a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7936d560, org.springframework.security.web.session.SessionManagementFilter@4a353c74, org.springframework.security.web.access.ExceptionTranslationFilter@600986b5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5a4d6615]
+2020-12-15 00:02:05.290  INFO 14602 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 00:02:05.294 DEBUG 14602 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-12-15 00:02:05.308 DEBUG 14602 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2020-12-15 00:02:05.311  INFO 14602 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-12-15 00:02:05.313 DEBUG 14602 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/] in 'viewControllerHandlerMapping'
+2020-12-15 00:02:05.316 DEBUG 14602 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-12-15 00:02:05.323 DEBUG 14602 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-12-15 00:02:05.347  INFO 14602 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-15 00:02:05.362  INFO 14602 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2020-12-15 00:02:05.376  INFO 14602 --- [restartedMain] c.m.p.PresentationLayerApplication       : Started PresentationLayerApplication in 0.774 seconds (JVM running for 396.195)
+2020-12-15 00:02:07.923  INFO 14602 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-15 00:02:08.062  INFO 14602 --- [restartedMain] c.m.p.PresentationLayerApplication       : Starting PresentationLayerApplication using Java 15 on macpro.local with PID 14602 (/Users/garrido/git/webshop/presentation/PresentationLayer/target/classes started by garrido in /Users/garrido/git/webshop/presentation/PresentationLayer)
+2020-12-15 00:02:08.062  INFO 14602 --- [restartedMain] c.m.p.PresentationLayerApplication       : No active profile set, falling back to default profiles: default
+2020-12-15 00:02:08.329  INFO 14602 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2020-12-15 00:02:08.333  INFO 14602 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-15 00:02:08.335  INFO 14602 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-15 00:02:08.360  INFO 14602 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-12-15 00:02:08.360  INFO 14602 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 295 ms
+2020-12-15 00:02:08.367 DEBUG 14602 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2020-12-15 00:02:08.367 DEBUG 14602 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2020-12-15 00:02:08.409  INFO 14602 --- [restartedMain] c.m.p.security.SpringSecurityConfig      : ______now in global config
+2020-12-15 00:02:08.425  INFO 14602 --- [restartedMain] c.m.p.security.SpringSecurityConfig      : ______now in configure.
+2020-12-15 00:02:08.431  INFO 14602 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4a61937f, org.springframework.security.web.context.SecurityContextPersistenceFilter@438b98a8, org.springframework.security.web.header.HeaderWriterFilter@41e6d394, org.springframework.security.web.csrf.CsrfFilter@3e7681dd, org.springframework.security.web.authentication.logout.LogoutFilter@68b35723, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@71f9caad, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@592b892, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@729fb1c7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f50fc51, org.springframework.security.web.session.SessionManagementFilter@49798033, org.springframework.security.web.access.ExceptionTranslationFilter@52e287ac, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@74296647]
+2020-12-15 00:02:08.519  INFO 14602 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 00:02:08.523 DEBUG 14602 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-12-15 00:02:08.537 DEBUG 14602 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2020-12-15 00:02:08.539  INFO 14602 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-12-15 00:02:08.541 DEBUG 14602 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/] in 'viewControllerHandlerMapping'
+2020-12-15 00:02:08.544 DEBUG 14602 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-12-15 00:02:08.550 DEBUG 14602 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-12-15 00:02:08.585  INFO 14602 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-15 00:02:08.601  INFO 14602 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2020-12-15 00:02:08.614  INFO 14602 --- [restartedMain] c.m.p.PresentationLayerApplication       : Started PresentationLayerApplication in 0.579 seconds (JVM running for 399.433)
+2020-12-15 00:02:19.945  INFO 14602 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-15 00:02:19.971  INFO 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-15 00:02:19.971 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-12-15 00:02:19.971 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2020-12-15 00:02:19.971 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2020-12-15 00:02:19.972 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@40bed76b
+2020-12-15 00:02:19.972 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4e79210c
+2020-12-15 00:02:19.972 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-12-15 00:02:19.972  INFO 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2020-12-15 00:02:19.974 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:02:19.975 DEBUG 14602 --- [http-nio-9090-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:02:19.976  INFO 14602 --- [http-nio-9090-exec-1] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:02:19.978 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-15 00:02:20.057 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:02:20.142 DEBUG 14602 --- [http-nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:02:20.142 DEBUG 14602 --- [http-nio-9090-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:02:20.142  INFO 14602 --- [http-nio-9090-exec-4] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:02:20.143 DEBUG 14602 --- [http-nio-9090-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*;q=0.1' given [text/css, */*;q=0.1]
+2020-12-15 00:02:20.147 DEBUG 14602 --- [http-nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:02:20.149 DEBUG 14602 --- [http-nio-9090-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:02:20.149 DEBUG 14602 --- [http-nio-9090-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:02:20.149  INFO 14602 --- [http-nio-9090-exec-5] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:02:20.150 DEBUG 14602 --- [http-nio-9090-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2020-12-15 00:02:20.154 DEBUG 14602 --- [http-nio-9090-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:02:28.007 DEBUG 14602 --- [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:02:28.039 DEBUG 14602 --- [http-nio-9090-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:02:28.039  INFO 14602 --- [http-nio-9090-exec-7] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:02:28.041 DEBUG 14602 --- [http-nio-9090-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-15 00:02:28.046 DEBUG 14602 --- [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:02:28.139 DEBUG 14602 --- [http-nio-9090-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:02:28.139 DEBUG 14602 --- [http-nio-9090-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:02:28.140  INFO 14602 --- [http-nio-9090-exec-10] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:02:28.140 DEBUG 14602 --- [http-nio-9090-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*;q=0.1' given [text/css, */*;q=0.1]
+2020-12-15 00:02:28.144 DEBUG 14602 --- [http-nio-9090-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:02:28.149 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:02:28.150 DEBUG 14602 --- [http-nio-9090-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:02:28.150  INFO 14602 --- [http-nio-9090-exec-1] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:02:28.150 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2020-12-15 00:02:28.154 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:02:31.882 DEBUG 14602 --- [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:02:31.882 DEBUG 14602 --- [http-nio-9090-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:02:31.882  INFO 14602 --- [http-nio-9090-exec-3] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:02:31.883 DEBUG 14602 --- [http-nio-9090-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-15 00:02:31.888 DEBUG 14602 --- [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:02:32.027 DEBUG 14602 --- [http-nio-9090-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:02:32.028 DEBUG 14602 --- [http-nio-9090-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:02:32.028  INFO 14602 --- [http-nio-9090-exec-6] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:02:32.028 DEBUG 14602 --- [http-nio-9090-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2020-12-15 00:02:32.033 DEBUG 14602 --- [http-nio-9090-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:02:32.041 DEBUG 14602 --- [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:02:32.042 DEBUG 14602 --- [http-nio-9090-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:02:32.042  INFO 14602 --- [http-nio-9090-exec-7] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:02:32.043 DEBUG 14602 --- [http-nio-9090-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*;q=0.1' given [text/css, */*;q=0.1]
+2020-12-15 00:02:32.047 DEBUG 14602 --- [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:02:36.335 DEBUG 14602 --- [http-nio-9090-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:02:36.336 DEBUG 14602 --- [http-nio-9090-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:02:36.336  INFO 14602 --- [http-nio-9090-exec-9] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:02:36.337 DEBUG 14602 --- [http-nio-9090-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-15 00:02:36.343 DEBUG 14602 --- [http-nio-9090-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:02:36.496 DEBUG 14602 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:02:36.502 DEBUG 14602 --- [http-nio-9090-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:02:36.502  INFO 14602 --- [http-nio-9090-exec-2] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:02:36.503 DEBUG 14602 --- [http-nio-9090-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2020-12-15 00:02:36.515 DEBUG 14602 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:02:36.541 DEBUG 14602 --- [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:02:36.541 DEBUG 14602 --- [http-nio-9090-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:02:36.541  INFO 14602 --- [http-nio-9090-exec-3] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:02:36.542 DEBUG 14602 --- [http-nio-9090-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*;q=0.1' given [text/css, */*;q=0.1]
+2020-12-15 00:02:36.546 DEBUG 14602 --- [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:02:40.633 DEBUG 14602 --- [http-nio-9090-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:02:40.633 DEBUG 14602 --- [http-nio-9090-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:02:40.634  INFO 14602 --- [http-nio-9090-exec-5] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:02:40.635 DEBUG 14602 --- [http-nio-9090-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-15 00:02:40.638 DEBUG 14602 --- [http-nio-9090-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:02:40.740 DEBUG 14602 --- [http-nio-9090-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:02:40.743 DEBUG 14602 --- [http-nio-9090-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:02:40.743  INFO 14602 --- [http-nio-9090-exec-8] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:02:40.744 DEBUG 14602 --- [http-nio-9090-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*;q=0.1' given [text/css, */*;q=0.1]
+2020-12-15 00:02:40.748 DEBUG 14602 --- [http-nio-9090-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:02:40.758 DEBUG 14602 --- [http-nio-9090-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:02:40.758 DEBUG 14602 --- [http-nio-9090-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:02:40.758  INFO 14602 --- [http-nio-9090-exec-9] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:02:40.759 DEBUG 14602 --- [http-nio-9090-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2020-12-15 00:02:40.762 DEBUG 14602 --- [http-nio-9090-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:03:21.858 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:03:21.913 DEBUG 14602 --- [http-nio-9090-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:03:21.913  INFO 14602 --- [http-nio-9090-exec-1] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:03:21.914 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-15 00:03:21.925 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:03:22.004 DEBUG 14602 --- [http-nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:03:22.004 DEBUG 14602 --- [http-nio-9090-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:03:22.004  INFO 14602 --- [http-nio-9090-exec-4] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:03:22.005 DEBUG 14602 --- [http-nio-9090-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*;q=0.1' given [text/css, */*;q=0.1]
+2020-12-15 00:03:22.010 DEBUG 14602 --- [http-nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:03:22.031 DEBUG 14602 --- [http-nio-9090-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:03:22.031 DEBUG 14602 --- [http-nio-9090-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:03:22.031  INFO 14602 --- [http-nio-9090-exec-5] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:03:22.032 DEBUG 14602 --- [http-nio-9090-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2020-12-15 00:03:22.037 DEBUG 14602 --- [http-nio-9090-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:03:52.947  INFO 14602 --- [Thread-21] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-15 00:03:53.438  INFO 14602 --- [restartedMain] c.m.p.PresentationLayerApplication       : Starting PresentationLayerApplication using Java 15 on macpro.local with PID 14602 (/Users/garrido/git/webshop/presentation/PresentationLayer/target/classes started by garrido in /Users/garrido/git/webshop/presentation/PresentationLayer)
+2020-12-15 00:03:53.442  INFO 14602 --- [restartedMain] c.m.p.PresentationLayerApplication       : No active profile set, falling back to default profiles: default
+2020-12-15 00:03:54.804  INFO 14602 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2020-12-15 00:03:54.814  INFO 14602 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-15 00:03:54.816  INFO 14602 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-15 00:03:54.847  INFO 14602 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-12-15 00:03:54.847  INFO 14602 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1395 ms
+2020-12-15 00:03:54.861 DEBUG 14602 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2020-12-15 00:03:54.861 DEBUG 14602 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2020-12-15 00:03:55.087  INFO 14602 --- [restartedMain] c.m.p.security.SpringSecurityConfig      : ______now in global config
+2020-12-15 00:03:55.136  INFO 14602 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 00:03:55.139 DEBUG 14602 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-12-15 00:03:55.164 DEBUG 14602 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2020-12-15 00:03:55.170  INFO 14602 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-12-15 00:03:55.172 DEBUG 14602 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/] in 'viewControllerHandlerMapping'
+2020-12-15 00:03:55.175 DEBUG 14602 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-12-15 00:03:55.180 DEBUG 14602 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-12-15 00:03:55.210  INFO 14602 --- [restartedMain] c.m.p.security.SpringSecurityConfig      : ______now in configure.
+2020-12-15 00:03:55.214  INFO 14602 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29c54a6b, org.springframework.security.web.context.SecurityContextPersistenceFilter@7387025b, org.springframework.security.web.header.HeaderWriterFilter@52920ea6, org.springframework.security.web.csrf.CsrfFilter@56c2621e, org.springframework.security.web.authentication.logout.LogoutFilter@4842837c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6111f73, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@75bd41ab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@37988684, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19bae014, org.springframework.security.web.session.SessionManagementFilter@36105415, org.springframework.security.web.access.ExceptionTranslationFilter@1d7369e1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3057cde1]
+2020-12-15 00:03:55.227  INFO 14602 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-15 00:03:55.243  INFO 14602 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2020-12-15 00:03:55.266  INFO 14602 --- [restartedMain] c.m.p.PresentationLayerApplication       : Started PresentationLayerApplication in 2.029 seconds (JVM running for 506.089)
+2020-12-15 00:03:55.280  INFO 14602 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   WebSecurityEnablerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2020-12-15 00:03:55.951  INFO 14602 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-15 00:03:55.951  INFO 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-15 00:03:55.951 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-12-15 00:03:55.951 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2020-12-15 00:03:55.951 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2020-12-15 00:03:55.951 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3c7ebe4b
+2020-12-15 00:03:55.952 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@32b957b4
+2020-12-15 00:03:55.952 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-12-15 00:03:55.952  INFO 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2020-12-15 00:03:55.953 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:03:55.953 DEBUG 14602 --- [http-nio-9090-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:03:55.954  INFO 14602 --- [http-nio-9090-exec-1] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:03:55.955 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-15 00:03:56.011 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:03:56.182 DEBUG 14602 --- [http-nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:03:56.183 DEBUG 14602 --- [http-nio-9090-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:03:56.183  INFO 14602 --- [http-nio-9090-exec-4] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:03:56.183 DEBUG 14602 --- [http-nio-9090-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2020-12-15 00:03:56.187 DEBUG 14602 --- [http-nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:03:56.199 DEBUG 14602 --- [http-nio-9090-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:03:56.199 DEBUG 14602 --- [http-nio-9090-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:03:56.199  INFO 14602 --- [http-nio-9090-exec-5] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:03:56.200 DEBUG 14602 --- [http-nio-9090-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*;q=0.1' given [text/css, */*;q=0.1]
+2020-12-15 00:03:56.203 DEBUG 14602 --- [http-nio-9090-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:03:59.760 DEBUG 14602 --- [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:03:59.760 DEBUG 14602 --- [http-nio-9090-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:03:59.760  INFO 14602 --- [http-nio-9090-exec-7] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:03:59.761 DEBUG 14602 --- [http-nio-9090-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-15 00:03:59.770 DEBUG 14602 --- [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:03:59.838 DEBUG 14602 --- [http-nio-9090-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:03:59.838 DEBUG 14602 --- [http-nio-9090-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:03:59.839  INFO 14602 --- [http-nio-9090-exec-10] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:03:59.839 DEBUG 14602 --- [http-nio-9090-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*;q=0.1' given [text/css, */*;q=0.1]
+2020-12-15 00:03:59.846 DEBUG 14602 --- [http-nio-9090-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:03:59.853 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:03:59.853 DEBUG 14602 --- [http-nio-9090-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:03:59.853  INFO 14602 --- [http-nio-9090-exec-1] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:03:59.854 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2020-12-15 00:03:59.861 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:04:03.146 DEBUG 14602 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:04:03.147 DEBUG 14602 --- [http-nio-9090-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:04:03.147  INFO 14602 --- [http-nio-9090-exec-2] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:04:03.148 DEBUG 14602 --- [http-nio-9090-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-15 00:04:03.151 DEBUG 14602 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:04:03.275 DEBUG 14602 --- [http-nio-9090-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:04:03.275 DEBUG 14602 --- [http-nio-9090-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:04:03.275  INFO 14602 --- [http-nio-9090-exec-6] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:04:03.276 DEBUG 14602 --- [http-nio-9090-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*;q=0.1' given [text/css, */*;q=0.1]
+2020-12-15 00:04:03.282 DEBUG 14602 --- [http-nio-9090-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:04:03.310 DEBUG 14602 --- [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:04:03.310 DEBUG 14602 --- [http-nio-9090-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:04:03.311  INFO 14602 --- [http-nio-9090-exec-7] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:04:03.311 DEBUG 14602 --- [http-nio-9090-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2020-12-15 00:04:03.314 DEBUG 14602 --- [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:04:07.105 DEBUG 14602 --- [http-nio-9090-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:04:07.106 DEBUG 14602 --- [http-nio-9090-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:04:07.106  INFO 14602 --- [http-nio-9090-exec-9] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:04:07.107 DEBUG 14602 --- [http-nio-9090-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-15 00:04:07.110 DEBUG 14602 --- [http-nio-9090-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:04:07.169 DEBUG 14602 --- [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:04:07.169 DEBUG 14602 --- [http-nio-9090-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:04:07.170  INFO 14602 --- [http-nio-9090-exec-3] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:04:07.170 DEBUG 14602 --- [http-nio-9090-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2020-12-15 00:04:07.177 DEBUG 14602 --- [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:04:07.189 DEBUG 14602 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:04:07.189 DEBUG 14602 --- [http-nio-9090-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:04:07.189  INFO 14602 --- [http-nio-9090-exec-2] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:04:07.190 DEBUG 14602 --- [http-nio-9090-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*;q=0.1' given [text/css, */*;q=0.1]
+2020-12-15 00:04:07.193 DEBUG 14602 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:04:12.315 DEBUG 14602 --- [http-nio-9090-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:04:12.315 DEBUG 14602 --- [http-nio-9090-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:04:12.316  INFO 14602 --- [http-nio-9090-exec-5] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:04:12.317 DEBUG 14602 --- [http-nio-9090-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-15 00:04:12.320 DEBUG 14602 --- [http-nio-9090-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:04:12.469 DEBUG 14602 --- [http-nio-9090-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:04:12.469 DEBUG 14602 --- [http-nio-9090-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:04:12.469  INFO 14602 --- [http-nio-9090-exec-8] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:04:12.470 DEBUG 14602 --- [http-nio-9090-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*;q=0.1' given [text/css, */*;q=0.1]
+2020-12-15 00:04:12.473 DEBUG 14602 --- [http-nio-9090-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:04:12.480 DEBUG 14602 --- [http-nio-9090-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:04:12.480 DEBUG 14602 --- [http-nio-9090-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:04:12.481  INFO 14602 --- [http-nio-9090-exec-9] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:04:12.481 DEBUG 14602 --- [http-nio-9090-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2020-12-15 00:04:12.484 DEBUG 14602 --- [http-nio-9090-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:04:16.824 DEBUG 14602 --- [http-nio-9090-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:04:16.854 DEBUG 14602 --- [http-nio-9090-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:04:16.855  INFO 14602 --- [http-nio-9090-exec-10] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:04:16.857 DEBUG 14602 --- [http-nio-9090-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-15 00:04:16.860 DEBUG 14602 --- [http-nio-9090-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:04:16.929 DEBUG 14602 --- [http-nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:04:16.929 DEBUG 14602 --- [http-nio-9090-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:04:16.929  INFO 14602 --- [http-nio-9090-exec-4] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:04:16.930 DEBUG 14602 --- [http-nio-9090-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*;q=0.1' given [text/css, */*;q=0.1]
+2020-12-15 00:04:16.933 DEBUG 14602 --- [http-nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:04:16.944 DEBUG 14602 --- [http-nio-9090-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:04:16.945 DEBUG 14602 --- [http-nio-9090-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:04:16.945  INFO 14602 --- [http-nio-9090-exec-5] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:04:16.945 DEBUG 14602 --- [http-nio-9090-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2020-12-15 00:04:16.949 DEBUG 14602 --- [http-nio-9090-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:06:02.384  INFO 14602 --- [Thread-26] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-15 00:06:03.100  INFO 14602 --- [restartedMain] c.m.p.PresentationLayerApplication       : Starting PresentationLayerApplication using Java 15 on macpro.local with PID 14602 (/Users/garrido/git/webshop/presentation/PresentationLayer/target/classes started by garrido in /Users/garrido/git/webshop/presentation/PresentationLayer)
+2020-12-15 00:06:03.100  INFO 14602 --- [restartedMain] c.m.p.PresentationLayerApplication       : No active profile set, falling back to default profiles: default
+2020-12-15 00:06:03.546  INFO 14602 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2020-12-15 00:06:03.551  INFO 14602 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-15 00:06:03.551  INFO 14602 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-15 00:06:03.585  INFO 14602 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-12-15 00:06:03.588  INFO 14602 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 486 ms
+2020-12-15 00:06:03.595 DEBUG 14602 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2020-12-15 00:06:03.599 DEBUG 14602 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2020-12-15 00:06:03.663  INFO 14602 --- [restartedMain] c.m.p.security.SpringSecurityConfig      : ______now in global config
+2020-12-15 00:06:03.695  INFO 14602 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 00:06:03.714 DEBUG 14602 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-12-15 00:06:03.747 DEBUG 14602 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2020-12-15 00:06:03.752  INFO 14602 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-12-15 00:06:03.754 DEBUG 14602 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/] in 'viewControllerHandlerMapping'
+2020-12-15 00:06:03.761 DEBUG 14602 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-12-15 00:06:03.767 DEBUG 14602 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-12-15 00:06:03.829  INFO 14602 --- [restartedMain] c.m.p.security.SpringSecurityConfig      : ______now in configure.
+2020-12-15 00:06:03.833  INFO 14602 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2020-12-15 00:06:03.843  INFO 14602 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**'] with []
+2020-12-15 00:06:03.846  INFO 14602 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@731cc164, org.springframework.security.web.context.SecurityContextPersistenceFilter@15434e50, org.springframework.security.web.header.HeaderWriterFilter@788fed2b, org.springframework.security.web.csrf.CsrfFilter@3c2cfd24, org.springframework.security.web.authentication.logout.LogoutFilter@68f37aef, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7080ce01, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44aea3c7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43cff8cc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d601e7e, org.springframework.security.web.session.SessionManagementFilter@4e5d4f62, org.springframework.security.web.access.ExceptionTranslationFilter@6827336c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@35ee4403]
+2020-12-15 00:06:03.853  INFO 14602 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-15 00:06:03.877  INFO 14602 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2020-12-15 00:06:03.892  INFO 14602 --- [restartedMain] c.m.p.PresentationLayerApplication       : Started PresentationLayerApplication in 1.318 seconds (JVM running for 634.721)
+2020-12-15 00:06:03.905  INFO 14602 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-12-15 00:06:14.051  INFO 14602 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-15 00:06:14.069  INFO 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-15 00:06:14.069 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-12-15 00:06:14.070 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2020-12-15 00:06:14.070 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2020-12-15 00:06:14.071 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@57396d5a
+2020-12-15 00:06:14.071 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@59fe99cd
+2020-12-15 00:06:14.071 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-12-15 00:06:14.071  INFO 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2020-12-15 00:06:14.072 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:06:14.072 DEBUG 14602 --- [http-nio-9090-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:06:14.073  INFO 14602 --- [http-nio-9090-exec-1] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:06:14.074 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-15 00:06:14.112 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:06:14.188 DEBUG 14602 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/bootstrap-4.5.3/dist/css/bootstrap.min.css", parameters={}
+2020-12-15 00:06:14.189 DEBUG 14602 --- [http-nio-9090-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-12-15 00:06:14.200 DEBUG 14602 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:06:14.216 DEBUG 14602 --- [http-nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:06:14.216 DEBUG 14602 --- [http-nio-9090-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:06:14.216  INFO 14602 --- [http-nio-9090-exec-4] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:06:14.217 DEBUG 14602 --- [http-nio-9090-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2020-12-15 00:06:14.220 DEBUG 14602 --- [http-nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:06:17.295 DEBUG 14602 --- [http-nio-9090-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:06:17.295 DEBUG 14602 --- [http-nio-9090-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:06:17.295  INFO 14602 --- [http-nio-9090-exec-6] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:06:17.296 DEBUG 14602 --- [http-nio-9090-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-15 00:06:17.299 DEBUG 14602 --- [http-nio-9090-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:06:17.342 DEBUG 14602 --- [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/css/bootstrap-4.5.3/dist/css/bootstrap.min.css", parameters={}
+2020-12-15 00:06:17.343 DEBUG 14602 --- [http-nio-9090-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-12-15 00:06:17.346 DEBUG 14602 --- [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:06:17.396 DEBUG 14602 --- [http-nio-9090-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:06:17.396 DEBUG 14602 --- [http-nio-9090-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:06:17.397  INFO 14602 --- [http-nio-9090-exec-9] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:06:17.397 DEBUG 14602 --- [http-nio-9090-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2020-12-15 00:06:17.401 DEBUG 14602 --- [http-nio-9090-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:08:06.089  INFO 14602 --- [Thread-31] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-15 00:08:06.657  INFO 14602 --- [restartedMain] c.m.p.PresentationLayerApplication       : Starting PresentationLayerApplication using Java 15 on macpro.local with PID 14602 (/Users/garrido/git/webshop/presentation/PresentationLayer/target/classes started by garrido in /Users/garrido/git/webshop/presentation/PresentationLayer)
+2020-12-15 00:08:06.657  INFO 14602 --- [restartedMain] c.m.p.PresentationLayerApplication       : No active profile set, falling back to default profiles: default
+2020-12-15 00:08:06.898  INFO 14602 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2020-12-15 00:08:06.899  INFO 14602 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-15 00:08:06.900  INFO 14602 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-15 00:08:06.910  INFO 14602 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-12-15 00:08:06.910  INFO 14602 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 251 ms
+2020-12-15 00:08:06.916 DEBUG 14602 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2020-12-15 00:08:06.917 DEBUG 14602 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2020-12-15 00:08:06.970  INFO 14602 --- [restartedMain] c.m.p.security.SpringSecurityConfig      : ______now in global config
+2020-12-15 00:08:07.018  INFO 14602 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 00:08:07.021 DEBUG 14602 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-12-15 00:08:07.039 DEBUG 14602 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2020-12-15 00:08:07.044  INFO 14602 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-12-15 00:08:07.057 DEBUG 14602 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/] in 'viewControllerHandlerMapping'
+2020-12-15 00:08:07.065 DEBUG 14602 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-12-15 00:08:07.082 DEBUG 14602 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-12-15 00:08:07.145  INFO 14602 --- [restartedMain] c.m.p.security.SpringSecurityConfig      : ______now in configure.
+2020-12-15 00:08:07.153  INFO 14602 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2020-12-15 00:08:07.171  INFO 14602 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**'] with []
+2020-12-15 00:08:07.175  INFO 14602 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12041cfa, org.springframework.security.web.context.SecurityContextPersistenceFilter@60702660, org.springframework.security.web.header.HeaderWriterFilter@63367484, org.springframework.security.web.csrf.CsrfFilter@7de466e3, org.springframework.security.web.authentication.logout.LogoutFilter@5850cf81, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@49bd8d30, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b7ee11f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b3c30a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33c76d8e, org.springframework.security.web.session.SessionManagementFilter@3e7d9c32, org.springframework.security.web.access.ExceptionTranslationFilter@68e6666f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24abb184]
+2020-12-15 00:08:07.183  INFO 14602 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-15 00:08:07.199  INFO 14602 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2020-12-15 00:08:07.216  INFO 14602 --- [restartedMain] c.m.p.PresentationLayerApplication       : Started PresentationLayerApplication in 0.893 seconds (JVM running for 758.052)
+2020-12-15 00:08:07.217  INFO 14602 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-12-15 00:08:20.084  INFO 14602 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-15 00:08:20.097  INFO 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-15 00:08:20.097 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-12-15 00:08:20.098 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2020-12-15 00:08:20.098 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2020-12-15 00:08:20.098 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4deef622
+2020-12-15 00:08:20.098 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@432911ef
+2020-12-15 00:08:20.098 DEBUG 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-12-15 00:08:20.099  INFO 14602 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2020-12-15 00:08:20.125 DEBUG 14602 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:08:20.125 DEBUG 14602 --- [http-nio-9090-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:08:20.126  INFO 14602 --- [http-nio-9090-exec-2] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:08:20.127 DEBUG 14602 --- [http-nio-9090-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-15 00:08:20.213 DEBUG 14602 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:08:20.623 DEBUG 14602 --- [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/css/bootstrap-4.5.3/dist/css/bootstrap.min.css", parameters={}
+2020-12-15 00:08:20.623 DEBUG 14602 --- [http-nio-9090-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-12-15 00:08:20.638 DEBUG 14602 --- [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:08:20.647 DEBUG 14602 --- [http-nio-9090-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:08:20.647 DEBUG 14602 --- [http-nio-9090-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:08:20.648  INFO 14602 --- [http-nio-9090-exec-5] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:08:20.648 DEBUG 14602 --- [http-nio-9090-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2020-12-15 00:08:20.651 DEBUG 14602 --- [http-nio-9090-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:08:23.660 DEBUG 14602 --- [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:08:23.662 DEBUG 14602 --- [http-nio-9090-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:08:23.662  INFO 14602 --- [http-nio-9090-exec-7] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:08:23.663 DEBUG 14602 --- [http-nio-9090-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-15 00:08:23.665 DEBUG 14602 --- [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:08:23.700 DEBUG 14602 --- [http-nio-9090-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/css/bootstrap-4.5.3/dist/css/bootstrap.min.css", parameters={}
+2020-12-15 00:08:23.700 DEBUG 14602 --- [http-nio-9090-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-12-15 00:08:23.703 DEBUG 14602 --- [http-nio-9090-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:08:23.749 DEBUG 14602 --- [http-nio-9090-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:08:23.749 DEBUG 14602 --- [http-nio-9090-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:08:23.749  INFO 14602 --- [http-nio-9090-exec-10] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:08:23.750 DEBUG 14602 --- [http-nio-9090-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2020-12-15 00:08:23.753 DEBUG 14602 --- [http-nio-9090-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:08:28.627 DEBUG 14602 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:08:28.627 DEBUG 14602 --- [http-nio-9090-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:08:28.627  INFO 14602 --- [http-nio-9090-exec-2] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:08:28.628 DEBUG 14602 --- [http-nio-9090-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-12-15 00:08:28.631 DEBUG 14602 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:08:28.706 DEBUG 14602 --- [http-nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/css/bootstrap-4.5.3/dist/css/bootstrap.min.css", parameters={}
+2020-12-15 00:08:28.707 DEBUG 14602 --- [http-nio-9090-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-12-15 00:08:28.710 DEBUG 14602 --- [http-nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-12-15 00:08:28.748 DEBUG 14602 --- [http-nio-9090-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2020-12-15 00:08:28.748 DEBUG 14602 --- [http-nio-9090-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.moose.presentationlayer.controller.LoginController#showLoginForm(Model)
+2020-12-15 00:08:28.749  INFO 14602 --- [http-nio-9090-exec-5] c.m.p.controller.LoginController         : in login controller
+2020-12-15 00:08:28.749 DEBUG 14602 --- [http-nio-9090-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2020-12-15 00:08:28.752 DEBUG 14602 --- [http-nio-9090-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
