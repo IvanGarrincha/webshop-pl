@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Image: </h1>
+	<div th:object="${image}">
+		<img th:src="${image.filepath}">
+	</div>
+</body>
+</html>

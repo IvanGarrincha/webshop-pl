@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<link href="../static/css/bootstrap-4.5.3/dist/css/bootstrap.min.css"
+	rel="stylesheet" media="screen"
+	th:href="@{/css/bootstrap-4.5.3/dist/css/bootstrap.min.css}" />
+<meta charset="UTF-8">
+<title>Login Page</title>
+</head>
+<body>
+	<div th:if="${error}">Unable to login</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-med-4 offset-md-3"><br/>
+				<h1>Login</h1>
+			
+			
+				<form method="POST" th:action="@{/login}" id="loginForm">
+					<label for="username">Username: </label> 
+						<input  type="text"	name="username" id="username" /> <br/> 
+					
+			
+					<label for="password">Password: </label> 
+						<input	type="password" 
+							name="password" 
+							id="password"/><br /> 
+					
+					<input type="submit" value="Login" />
+				</form>
+				
+				
+				<div class="registrationBox">
+					<h4>Not registered?</h4>
+					<!-- method="GET" th:action="@{/register}" -->
+					<form >
+						<input type="submit" value="Register" />
+					</form>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>

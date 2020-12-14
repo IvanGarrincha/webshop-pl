@@ -1,0 +1,6 @@
+.navbar.ul.li {
+	background-color: red;
+	width: 100px;
+	border: solid black 1px;
+	font: 30px;
+}
